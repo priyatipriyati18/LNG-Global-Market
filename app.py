@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
-BI_URL = os.getenv("BI_URL", "https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx")
+BI_URL = os.getenv("BI_URL", "https://fred.stlouisfed.org/series/PNGASJPUSDM")
 
 
 def scrape_via_worker(headless: bool):
